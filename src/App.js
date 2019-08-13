@@ -14,7 +14,7 @@ class App extends React.Component {
 
     return(
       <BrowserRouter>
-      <div>
+      <div className="backgrounds">
       
       <Switch>
       <Route exact path="/" component={Home} />

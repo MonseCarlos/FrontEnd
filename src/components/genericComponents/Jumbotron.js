@@ -3,43 +3,19 @@ import './styles/jumbotron.css'
 class Carousel extends Component {
 render(){
     return(
-        <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://photos.google.com/partner/AF1QipNtaFDXLJE1AbH-dn_ZNhm7JP8L/photo/AF1QipOoXVvNEe-_JtWGl6aSgT2j_BFsSjvHUDGYM7yl slide&bg=373940"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://photos.google.com/partner/AF1QipNtaFDXLJE1AbH-dn_ZNhm7JP8L/photo/AF1QipOoXVvNEe-_JtWGl6aSgT2j_BFsSjvHUDGYM7yl"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="https://photos.google.com/partner/AF1QipNtaFDXLJE1AbH-dn_ZNhm7JP8L/photo/AF1QipOoXVvNEe-_JtWGl6aSgT2j_BFsSjvHUDGYM7yl"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/68715787_361631521177845_7112451196337520640_o.jpg?_nc_cat=104&_nc_oc=AQmYXxJbl67rOUp7pal694DYjDOPlhJh_x0jhoAjm38ciHbyTS4ao1ZegkcXK4egDZk&_nc_ht=scontent.fgdl3-1.fna&oh=9ec6f18e30022fc7e9914ecfa0feefce&oe=5DE0833F" alt="First slide"/>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/66385884_346749252666072_2326705623875452928_o.jpg?_nc_cat=111&_nc_oc=AQlX42rHNjtBN75QMDUOF03oQgY8wNI0bhzfTPSSXj4UG1PS2pcCDfMJqqjsu7d14f0&_nc_ht=scontent.fgdl3-1.fna&oh=825ba6e6ad328b1d5faf460fb4a4208a&oe=5DEAF4E4" alt="Second slide"/>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/45407882_247571135917218_5990573066806099968_o.jpg?_nc_cat=104&_nc_oc=AQmc6vLWVGIn8gkt8AH6Lc5mY8ZCtMjlEyoHRHggGQBFu3lOBjZpaKQykrCGe-8b3e0&_nc_ht=scontent.fgdl3-1.fna&oh=29668880ad4d75fac896421ced74d448&oe=5DC7642F" alt="Third slide"/>
+        </div>
+      </div>
+    </div>
     );
 }
 }

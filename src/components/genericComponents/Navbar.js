@@ -31,19 +31,19 @@ class Navbar extends Component {
                     <span className="sr-only">(current)</span></Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Gerias">Nosotros</Link>
+          <Link className="nav-link" to="/Nosotros">Nosotros</Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Nosotros">Galerias</Link>
+          <Link className="nav-link" to="/Galeria">Galerias</Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Nosotros">Servicios</Link>
+          <Link className="nav-link" to="/Servicios">Servicios</Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Nosotros">Lista para tu sesion</Link>
+          <Link className="nav-link" to="/Readysesion">Lista para tu sesion</Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Nosotros">Contacto</Link>
+          <Link className="nav-link" to="/Contacto">Contacto</Link>
         </li>
         <li>
           <Link className="nav-link" to="/Login">Login</Link>
