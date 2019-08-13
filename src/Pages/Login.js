@@ -65,7 +65,6 @@ class Login extends React.Component  {
     return(
         <div>
             <Navbar />
-            <Jumbotron title="Login" subtiltle="Sign In" />
             <div className="container">
                 <h2>
                     Please Login User
