@@ -1,11 +1,14 @@
 {
-  "name": "my-app",
+  "name": "clase-43",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.1.0"
+    "create-react-app": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +30,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsCruz/ReactTask.git"
+  },
+  "author": "Raquel Monserrat Carlos <raquel_monserrat@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsCruz/ReactTask/issues"
+  },
+  "homepage": "https://github.com/IsCruz/ReactTask#readme",
+  "devDependencies": {}
 }
