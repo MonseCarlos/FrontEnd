@@ -21,9 +21,10 @@ class App extends React.Component {
       <Route exact path ="/Nosotros" component={Nosotros} />
       <Route exact path="/mytasks/add" component={() => <h1>Add a task</h1>} />
       <Route exact path="/mytasks/view/:id" component={() => <h1>A View task page</h1>} />
-      <ProtectedRoute exact path="/my-info" component={MyInfo} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/logout-page" render={() => Logout} />
+      <ProtectedRoute exact path="/my-info" component={MyInfo} />
+      <ProtectedRoute exact path="/my-sesion" component={}/>
       <Route exact path="*" component={() => "404 NOT FOUND"} />
       </Switch>
       
