@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles/navbar.css';
-import Auth from '../Auth';
+import Auth from '../../Helper/Auth';
 import Logout from './Logout'
 import { withRouter } from 'react-router-dom';
 class Navbar extends Component {
@@ -15,10 +15,10 @@ class Navbar extends Component {
                 <span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/mytasks">Tasks Management</Link>
+          <Link className="nav-link" to="/mysesions">Mis sesiones</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/my-info">My Info</Link>
+          <Link className="nav-link" to="/my-info">Mi perfil</Link>
         </li>
         <li>
           <Logout />

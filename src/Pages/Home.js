@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbarsup from '../components/genericComponents/navbarsup'
 import Navbar from '../components/genericComponents/Navbar'
-import Carousel from '../components/genericComponents/Jumbotron'
+import Carousel from '../components/genericComponents/Carousel'
 import Footer from '../components/genericComponents/Footer'
 
 function Home () {
     return(
         <div>
+            
             <Navbarsup/>
-            <Navbar />
+            <Navbar/>
+          
+           
             <Carousel/>
             <div className="container">
                 <h2>

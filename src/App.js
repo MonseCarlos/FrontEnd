@@ -1,7 +1,7 @@
 import React from 'react'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {HashRouter, Route, Switch} from 'react-router-dom'
 import Home from './Pages/Home'
-import TasksManager from './Pages/TasksManager'
+import Nosotros from './Pages/Nosotros'
 import MyInfo from './Pages/MyInfo'
 import './App.css'
 import Login from './Pages/Login';
@@ -13,12 +13,12 @@ class App extends React.Component {
   render () {
 
     return(
-      <BrowserRouter>
+      <HashRouter basename="/">
       <div className="backgrounds">
       
       <Switch>
       <Route exact path="/" component={Home} />
-      <ProtectedRoute exact path ="/mytasks" component={TasksManager} />
+      <Route exact path ="/Nosotros" component={Nosotros} />
       <Route exact path="/mytasks/add" component={() => <h1>Add a task</h1>} />
       <Route exact path="/mytasks/view/:id" component={() => <h1>A View task page</h1>} />
       <ProtectedRoute exact path="/my-info" component={MyInfo} />
@@ -28,7 +28,7 @@ class App extends React.Component {
       </Switch>
       
       </div>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }

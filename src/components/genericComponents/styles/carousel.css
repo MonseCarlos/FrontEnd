@@ -1,6 +1,7 @@
-.jumbotron {
+.carousel {
     background-color: #000051!important;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     color:white;
+    margin-top: -120px
 }

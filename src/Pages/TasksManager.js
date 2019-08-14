@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../components/genericComponents/Navbar'
-import Jumbotron from '../components/genericComponents/Jumbotron'
 import Footer from '../components/genericComponents/Footer'
 import TaskList from '../components/TaskList'
 import AddTask from '../components/AddTask'
@@ -108,7 +107,7 @@ class TasksManager extends React.Component {
     return(
         <div>
             <Navbar />
-            <Jumbotron title="Tasks Manager" subtiltle="Task Manager App" />
+           
             <div className="container">
                 <h2>
                     Task Manager Page

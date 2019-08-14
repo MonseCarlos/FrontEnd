@@ -1,21 +1,11 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
 import Navbar from '../components/genericComponents/Navbar'
-import Jumbotron from '../components/genericComponents/Jumbotron'
+import Navbarsup from '../components/genericComponents/navbarsup'
 import Footer from '../components/genericComponents/Footer'
-import Auth from '../components/Auth'
+import Auth from '../Helper/Auth'
+import {getToken} from '../services/user'
 
-const BASE_URL = 'http://localhost:4000'
-
-function getToken(data){
-    return fetch(`${BASE_URL}/users/login`, {
-        method: 'POST',
-        headers:{
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify(data)
-    }).then(response => response.json())
-}
 class Login extends React.Component  {
 
     constructor(props){
@@ -64,6 +54,7 @@ class Login extends React.Component  {
     render(){
     return(
         <div>
+            <Navbarsup/>
             <Navbar />
             <div className="container">
                 <h2>

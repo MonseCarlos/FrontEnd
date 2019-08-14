@@ -2,10 +2,10 @@ class Auth {
     constructor() {
         this.authenticated = false
     }
-    login(data,callback) {
+    login(data, callback) {
         // fetch user, set JWT, user-id;
-        localStorage.setItem('user-data', JSON.stringify(data.username))
-        localStorage.setItem('token', data.token)
+        localStorage.setItem('user-data', JSON.stringify(data))
+        localStorage.setItem('token', data)
         this.authenticated = true;
         callback() // callback it's a function
     }
@@ -17,10 +17,11 @@ class Auth {
         callback()
     }
     isAuthenticated(){
+        // validate if the local storage data is available.
         if(localStorage.getItem('token')){
+            // API call verify token
             this.authenticated = true;
         }
-        // validate if the local storage data is available.
         return this.authenticated;
     }
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../components/genericComponents/Navbar'
-import Jumbotron from '../components/genericComponents/Jumbotron'
 import Footer from '../components/genericComponents/Footer'
 
 function MyInfo () {
@@ -11,10 +10,9 @@ function MyInfo () {
     return(
         <div>
             <Navbar />
-            <Jumbotron title="User's Info" subtiltle="Personal Information" />
             <div className="container">
                 <h2>
-                    Welcome {userFullName().user_name};
+                    Welcome {userFullName().name};
                 </h2>
                 <p>
                     This is Just a demo text. {userFullName().email}

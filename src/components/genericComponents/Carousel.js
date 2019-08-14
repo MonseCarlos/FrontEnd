@@ -1,10 +1,13 @@
 import React, {Component} from 'react'
-import './styles/jumbotron.css'
+import './styles/carousel.css'
+
 class Carousel extends Component {
 render(){
     return(
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"> 
       <div class="carousel-inner">
+      
         <div class="carousel-item active">
           <img class="d-block w-100" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/68715787_361631521177845_7112451196337520640_o.jpg?_nc_cat=104&_nc_oc=AQmYXxJbl67rOUp7pal694DYjDOPlhJh_x0jhoAjm38ciHbyTS4ao1ZegkcXK4egDZk&_nc_ht=scontent.fgdl3-1.fna&oh=9ec6f18e30022fc7e9914ecfa0feefce&oe=5DE0833F" alt="First slide"/>
         </div>
