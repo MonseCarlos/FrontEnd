@@ -21,6 +21,12 @@ class Navbar extends Component {
           <Link className="nav-link" to="/my-info">Mi perfil</Link>
         </li>
         <li>
+          <Link className="nav-link" to="/Galeria">Galerias</Link>
+        </li>
+        <li>
+          <Link className="nav-link" to="/Servicios">Servicios</Link>
+        </li>
+        <li>
           <Logout />
         </li>
       </ul>

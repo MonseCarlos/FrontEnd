@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Nosotros from './Pages/Nosotros'
 import MyInfo from './Pages/MyInfo'
 import Mysesion from './Pages/MySesion'
+import MyGalery from './Pages/Galerias'
 import './App.css'
 import Login from './Pages/Login';
 import {ProtectedRoute} from './components/ProtectedRoute'
@@ -20,6 +21,7 @@ class App extends React.Component {
       <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path ="/Nosotros" component={Nosotros} />
+      <Route exact path ="/Galeria" component={MyGalery}/>
       <Route exact path="/mytasks/add" component={() => <h1>Add a task</h1>} />
       <Route exact path="/mytasks/view/:id" component={() => <h1>A View task page</h1>} />
       <Route exact path="/login" component={Login} />
