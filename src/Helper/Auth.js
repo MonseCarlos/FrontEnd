@@ -6,6 +6,7 @@ class Auth {
         // fetch user, set JWT, user-id;
         localStorage.setItem('user-data', JSON.stringify(data))
         localStorage.setItem('token', data)
+        localStorage.setItem('_id', data._id)
         this.authenticated = true;
         callback() // callback it's a function
     }
