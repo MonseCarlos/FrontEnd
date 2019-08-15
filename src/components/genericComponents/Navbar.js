@@ -15,7 +15,7 @@ class Navbar extends Component {
                 <span className="sr-only">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/mysesions">Mis sesiones</Link>
+          <Link className="nav-link" to="/my-sesion">Mis sesiones</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/my-info">Mi perfil</Link>

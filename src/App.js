@@ -3,6 +3,7 @@ import {HashRouter, Route, Switch} from 'react-router-dom'
 import Home from './Pages/Home'
 import Nosotros from './Pages/Nosotros'
 import MyInfo from './Pages/MyInfo'
+import Mysesion from './Pages/MySesion'
 import './App.css'
 import Login from './Pages/Login';
 import {ProtectedRoute} from './components/ProtectedRoute'
@@ -24,7 +25,7 @@ class App extends React.Component {
       <Route exact path="/login" component={Login} />
       <Route exact path="/logout-page" render={() => Logout} />
       <ProtectedRoute exact path="/my-info" component={MyInfo} />
-      <ProtectedRoute exact path="/my-sesion" component={}/>
+      <ProtectedRoute exact path="/my-sesion" component={Mysesion}/>
       <Route exact path="*" component={() => "404 NOT FOUND"} />
       </Switch>
       

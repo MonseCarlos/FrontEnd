@@ -9,9 +9,7 @@ function Home () {
         <div>
             
             <Navbarsup/>
-            <Navbar/>
-          
-           
+            <Navbar/>         
             <Carousel/>
             <div className="container">
                 <h2>
