@@ -5,12 +5,6 @@ import Paquetes from '../components/Paquetes'
 import {getSesion} from  '../services/sesionservice'
 import {getPaquete} from '../services/paquetesservice'
 
-function Name (){
-  const  userFullName = () =>{
-    const name = localStorage.getItem("user-data")
-    return JSON.parse(name);
-    }
-}
 
 class MySesion extends React.Component  {
    constructor(props){
@@ -20,43 +14,43 @@ class MySesion extends React.Component  {
        paquete:[]
      }
    }
-   loadsesion () { 
+  
+  loadsesion () {
     getSesion()
-      .then(listsesion => { 
-        console.log(listsesion)
-        this.setState({
-          listsesion: listsesion
-        })
-        console.log(this.state.listsesion)
-        // for loop 
-        return getPaquete(this.state.listsesion)
-      .then(paquete =>{ console.log(paquete)
-        this.setState({
-          paquete: paquete
+      .then(listsesion => {
+        this.getPaquete2(listsesion)
+      })
+  }
+ 
+  getPaquete2(sesion){
+   getPaquete(sesion)
+      .then(paquete =>{ 
+     console.log(paquete) 
+        this.setState(state => {
+          const conpaquete=  state.paquete.concat(paquete.message);
+          return {
+            paquete: conpaquete,
+            listsesion: sesion
+          }
           //paquete: Object.values(paquete.message)
         })
         console.log(this.state.paquete);
       })
-      })
-  }
+   }
+  
   componentDidMount () {
     this.loadsesion()
     console.log(this.state.listsesion)
   }
  
-  userFullName(){
-    this.Name()
-  }
 
     render(){
     return(
 
         <div>
             <Navbar />
-            <h2>
-                   Bienvenido {this.userFullName.name};
-            </h2>
-            <Paquetes title='Sesiones' paquete={this.state.paquete}/>
+            
+            <Paquetes title='Sesiones' paquete={this.state.paquete} sesion={this.state.listsesion}/>
             <Footer />
         </div>
     )}
