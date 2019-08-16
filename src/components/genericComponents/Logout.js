@@ -9,7 +9,7 @@ const Logout = (props) => {
 }*/
 const Logout = (props) => {
     return(
-    <a  className="nav-link logout" onClick={
+    <a  className="nav-link " onClick={
         () => {
             Auth.logout(() => {
                 props.history.push("/")

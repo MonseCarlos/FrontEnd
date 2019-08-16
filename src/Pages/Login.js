@@ -54,6 +54,9 @@ class Login extends React.Component {
     render() {
         return (
             <div>
+                <div class="tab" >
+
+                </div>
                 <Navbarsup />
                 <Navbar />
 
@@ -77,7 +80,7 @@ class Login extends React.Component {
                                         </div>
                                         <div class="form-group">
                                             <label for="password" class="text-info">Contraseña:</label><br/>
-                                            <input type="text"  id="password" class="form-control"
+                                            <input type="password"  id="password" class="form-control"
                                                 name = "password" 
                                                 value = {this.state.password} 
                                                 placeholder="password" 

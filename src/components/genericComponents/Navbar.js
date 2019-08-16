@@ -52,7 +52,7 @@ class Navbar extends Component {
           <Link className="nav-link" to="/Contacto">Contacto</Link>
         </li>
         <li>
-          <Link className="nav-link" to="/Login">Login</Link>
+          <Link className="nav-link" to="/Login">Acceso a Clientes</Link>
         </li>
       </ul>
     }

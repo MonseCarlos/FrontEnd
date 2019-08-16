@@ -12,10 +12,10 @@ function MyInfo () {
             <Navbar />
             <div className="container">
                 <h2>
-                    Welcome {userFullName().name};
+                    Hola {userFullName().name}
                 </h2>
                 <p>
-                    This is Just a demo text. {userFullName().email}
+                    {userFullName().email}
                 </p>
             </div>
             <Footer />

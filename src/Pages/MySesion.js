@@ -4,6 +4,7 @@ import Footer from '../components/genericComponents/Footer'
 import Paquetes from '../components/Paquetes'
 import {getSesion} from  '../services/sesionservice'
 import {getPaquete} from '../services/paquetesservice'
+import Navbarsup from '../components/genericComponents/navbarsup';
 
 
 class MySesion extends React.Component  {
@@ -48,6 +49,10 @@ class MySesion extends React.Component  {
     return(
 
         <div>
+            <div class="tab" >
+
+            </div>
+            <Navbarsup/>
             <Navbar />
             
             <Paquetes title='Sesiones' paquete={this.state.paquete} sesion={this.state.listsesion}/>

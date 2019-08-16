@@ -24,10 +24,19 @@
     }
     }
     
-    @media (max-width: 400px) {
-    .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-    }
-    }
+.texto-encima{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+}
+
+.centrado{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size:150%;
+    background-color:rgba(34, 32, 32, 0.5);
+}
     

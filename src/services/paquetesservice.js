@@ -14,21 +14,3 @@ export function getPaquete(idpaquete) {
     }).then(response => response.json())
 }
 
-
-
-function getList () {
-    return fetch(`${BASE_URL}todos`,{
-      method: 'GET',
-      headers:{
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer '+ token
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        let task = data.map((todo) => {
-          return todo
-        })
-        return task
-      })
-  }
