@@ -2,7 +2,7 @@ import React from 'react'
 import Navbarsup from '../components/genericComponents/navbarsup'
 import Navbar from '../components/genericComponents/Navbar'
 import Footer from '../components/genericComponents/Footer'
-import galeriaSmash from '../Pages/galeriaSmash'
+import { Link } from 'react-router-dom';
 import './styles/mygalery.css'
 
 
@@ -16,10 +16,10 @@ function MyGalery () {
             <Navbar/>         
             <div class="gallery" id="gallery">
                 <div class="mb-3 pics animation all 2">
-                    <form action = "galeriaSmash">                 
+                    <form >                 
                         <input class="img-fluid" type="image" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/69167090_362089231132074_5546378710011084800_n.jpg?_nc_cat=110&_nc_oc=AQmEmriYLmRRqEe3IAQ4bgSEtwWcsTwl9j2Q1JhfrbEmoSXozMZUWod-qgKzohdn48k&_nc_ht=scontent.fgdl3-1.fna&oh=f27d5201a90afe59b2d115e25950a096&oe=5DE79BB0" />
                         <div class="texto-encima"></div>
-                        <div class="centrado">Smash Cake </div>
+                        <div class="centrado"><Link to="/Galeria/galeriaSmash">SmashCake</Link> </div>
                     </form>
                 </div>
 
@@ -28,7 +28,7 @@ function MyGalery () {
                     <form action="Home">
                         <input class="img-fluid" type="image" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/64413264_335805160427148_1031887367700480_o.jpg?_nc_cat=104&_nc_oc=AQnqLXhxwgDzkKOPJ-8rbAsmkOQ8WmeiRIh9Y48jAhWyWu4AsJkDyqIcoG7ZP3hFaNA&_nc_ht=scontent.fgdl3-1.fna&oh=b102e4f7c37fe044cded367f2eaaae95&oe=5E10F55F" />
                         <div class="texto-encima"></div>
-                        <div class="centrado">  Maternidad </div>
+                        <div class="centrado"> <Link to="/Galeria/galeriamaternidad">Maternidad</Link> </div>
                     </form>
                 </div>
 
@@ -66,7 +66,7 @@ function MyGalery () {
                
                 <div class="mb-3 pics animation all 2">
                     <form action="home">
-                        <input class="img-fluid" type="image" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/41658976_232611740746491_3082368195772809216_o.jpg?_nc_cat=107&_nc_oc=AQlZKgFGfE8Z2aSIp3DQdFbIEz8v6wMVBkLWI_tKmf3oL3HozQDDfVJXOoIBMaGbNRg&_nc_ht=scontent.fgdl3-1.fna&oh=4dc76a88d27a90a671b48a65a8a68ac0&oe=5DE74082" alt="Card image cap" />
+                        <input class="img-fluid" type="image" src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t1.0-9/41723597_232611657413166_2563420049155031040_n.jpg?_nc_cat=104&_nc_oc=AQknFm-Ld-NufH6SwEvBhIR8wM4GsrmukFnlO98XQriII3B6C_lD1pMfZQY86CyYJUY&_nc_ht=scontent.fgdl3-1.fna&oh=7e5536ba7c459374f410a175e10ee83a&oe=5E11C9E5" alt="Card image cap" />
                         <div class="texto-encima"></div>
                         <div class="centrado">Sesiones Infantiles</div>
                     </form>
