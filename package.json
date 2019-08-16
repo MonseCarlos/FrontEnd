@@ -33,20 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IsCruz/ReactTask.git"
-  },
-  "author": "Raquel Monserrat Carlos <raquel_monserrat@hotmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/IsCruz/ReactTask/issues"
-  },
-  
-  "devDependencies": {
-    "gh-pages": "^2.1.1"
   }
-}
+  }
